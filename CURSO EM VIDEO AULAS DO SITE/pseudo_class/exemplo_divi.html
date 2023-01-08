@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: brown;
+            background-color: white;
+            border: 1px solid black;
+            padding: 5px;
+            padding-top: 2px;
+        }
+        div:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de div </h1>
+    <p>Passe o mause para exibir a mensagem</p>
+    <div>passe o mouse aqui
+        <p>Essa e uma mensagem oculta </p>
+    </div>
+    <p>fim do Exemplo</p>
+</body>
+</html>

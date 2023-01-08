@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Formatação de textos</title>
+        <style>
+            mark{
+                background-color:yellowgreen;
+            }
+        </style><!--Essa tag style acompanhado com seletor mark faz com que as cores de marcação se torne padrao em todas as linhas -->
+
+    </head>
+    <bady>
+        <h1>Principais formatações</h1>
+        <h2>Negrito / Italico</h2>
+        <p>Nesta frase temos um <b>termo em Negrito</b> usando a tag B (não semantica)</p>
+        <p>Nesta frase temos um <strong>termo em destaque</strong>usando a tag strong (semantica)</p>
+        <hr>
+        <h2>Italico / Enfase</h2>
+        <p>Nesta frase temos um <i>termo em italico</i> usando a tag i (nao semantica) </p>
+        <p>Nesta frase temos um <em>termo em enfase</em> usando a tag em (semantica)</p>
+        <hr>
+        <h2>Texto marcado</h2>
+        <p>podemos criar um texto marcado usando a tag mark,  <mark>vamos marcar a palavra frase</mark></p>
+        <p>Nesta linha tem outra frase <mark>marcada no final</mark></p><!--Para que todoas as marcoes fiquem com a mesma com em todas as linhas e preciso criar nas configurações da bagina"head" a tag style e adicionando um seletor ex acima em head-->
+        <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um<big> texto grande</big> e um <small>texto pequeno</small> neste paragrafo</p>
+        <h2>Texto deletado</h2>
+        <p>podemos marcar um texto como <del>excludo</del> para indicar que ele deve ser lido mais nao considerado</p>
+        <h2>Texto inserido</h2>
+        <p>podemos marcr um texto como <ins>inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois</p>
+        <p>outra forma de sublinhar o texto e usando a tag u <br>
+        esta <u>frase vai estar sublinhada</u></p>
+        <h2>Vamos criar uma frasem em negrito, italico marcado e sublinhado logo abaixo</h2>
+        <p>Esta frase vai estar em negrito italico marcado e sublinhado no <strong><em><mark style="background-color: brown;"><ins>final</ins></mark></em></strong> </p>
+        <h2>Texto sobrescrito</h2>
+        <p>usado para inserir coisas do tipo X<sup>20</sup>+3</p>
+        <h2>Texto subscrito</h2>
+        <p>usado para inserir coisas do tipo H<sub>2</sub>O</p>
+        <hr>
+        <h1>Outras Formatações</h1>
+        <h2>Codigo-Fonte / Pre-formatação </h2>
+        <p>o comando <code>document.getElementByID</code>('Teste') e escrito em liguagem JavaScript.</p><!--tag code e usada para organização do codigo mono espaçado para que todos os cararcters ocupem o espaço padrao na memoria-->
+        <hr>
+        <!--Vamos dar um outro exemplo de organização ultilizando a linguagem de programação python logo abaixo perceba que o codigo nao esta organizado e esta tudo em uma unica linha-->
+        <code>
+            num = int(input('Digite um numero: '))
+                if num % 2 == o:
+                    print(f'o numero {num} e par')
+                else:
+                    print(f' O numero {num} e impar')
+                print('fim do programa')
+        </code>
+        <!--Agora neste proximo exemplo vamos usar o envelopamento usando a tag pre no mesmo codigo para que o nosso codigo seja exibida de forma identada na pagina -->
+        <pre>
+            <code>
+num = int(input('Digite um numero: '))
+if num % 2 == o:
+    print(f'o numero {num} e par')
+else:
+    print(f' O numero {num} e impar')
+print('fim do programa')
+            </code>
+        </pre>
+       <!-- para que o nosso codigo fique alinhado a margem esquerda da pagina selecionamos todo o codigo e com as teclas alt + tab fazemos o alinhamento--> 
+
+        
+       <hr>
+       <h1>Citações</h1>
+       <p>Como dizia o pai de amigo: O computador e um burro muito rapido. Essa primeira linha nao usamos a citação </p><!--podemo fazer a citação de duas maneiras uma e manualmente acrecentado aspas e outra e acrecentando as aspas usando a tag q-->
+       <p>Como dizia o pai de amigo: <q><mark style="background-color:yelow;">O computador e um burro muito rapido.</mark></q> Nesta linha usamos a citação apartir da tag q</p>
+       <hr>
+       <h2>citações completas</h2>
+       <p>Segundo a frase de Steve jobs:</p>
+       <blockquote cite="www.stevejobs_criador.da-Appe.com">
+        Você tem de agir. E e Você tem que esta disposto
+        a fracassar se você tem medi de fracassar nao ira 
+        muito longe
+        <h2>Abreviação</h2>
+        <p>Estaou estudando <abbr title="hyperText markup language">HTML</abbr> e <abbr title="Cascating Style sheets">CSS</abbr> </p>
+    </blockquote>
+    </bady>
+
+</html>

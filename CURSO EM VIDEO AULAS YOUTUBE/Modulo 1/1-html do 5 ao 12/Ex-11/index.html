@@ -1,0 +1,24 @@
+<!--Nesta aula vamos tramalhar com imagens dinamicas, ou seja configuração de telas, por exemplo telas de celular, telas de tablets e telas de computadores-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML </title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em varios dispositivos ou simplismente oumente ou diminua o tamanho do seu navegador</p>
+    <picture><!--Essa tag possibilita que trabalhamos com imagens dentro dela-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagem flexivel">
+        <!--Resumo: a tag "picture permite que trabalhamos com a manipulação de tamanho de imagens apartir da tag source midia type, manipulamos tres tamanhos de imagens em nosso site faazendo com que cada tamnho se adaptace quando movimentamos o tamanho da pagina"-->
+        <p><a href="page2.html" target="_blank" rel="_self">Clique aqui</a></p>
+        <p>Para ser encaminhado para pagina de estudo de implementação de audiio <a href="audios.html">Click Aqui!!</a></p>
+    </picture>
+    
+
+</body>
+</html>
